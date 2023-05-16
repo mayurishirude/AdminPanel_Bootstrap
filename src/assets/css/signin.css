@@ -1,0 +1,66 @@
+.signin{
+    background: #c6f6f8;
+    background-repeat: no-repeat;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin .card{
+    width: 30vw;
+    height: auto;
+    background-color: #ffffffc9;
+    text-align: center;
+}
+
+@media (max-width:1440px)/* for xlg screens */
+{
+    .signin .card{
+        width: 30vw;
+        height: auto;
+        background-color: #ffffffc9;
+        text-align: center;
+    }
+}
+
+@media (max-width:1200px)/* for lg screens */
+{
+    .signin .card{
+        width: 35vw;
+        height: auto;
+        background-color: #ffffffc9;
+        text-align: center;
+    }
+}
+
+@media (max-width:992px)/* for md screens */
+{
+    .signin .card{
+        width: 35vw;
+        height: auto;
+        background-color: #ffffffc9;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px)/* for sm screens */
+{
+    .signin .card{
+        width: 45vw;
+        height: auto;
+        background-color: #ffffffc9;
+        text-align: center;
+    }
+}
+
+@media (max-width:560px)/* for mobile screens */
+{
+    .signin .card{
+        width: 80vw;
+        height: auto;
+        background-color: #ffffffc9;
+        text-align: center;
+    }
+}
