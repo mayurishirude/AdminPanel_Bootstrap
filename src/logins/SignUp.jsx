@@ -1,15 +1,21 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-
-function SignIn() {
+function SignUp() {
     return (
         <div className='signin'>
             <div class="card">
                 <div className="card-body">
                     <h5 className="card-title">Sign In</h5>
+                    <p className='form-text text-muted'>Please enter your Details:</p>
                     <hr className='hrw w-20' />
                     <div className='text-start'>
+
+                        <div className="form-group m-2">
+                            <label htmlFor="exampleInputEmail1">Full Name</label>
+                            <input type="text" className="form-control" id="exampleInputText1" aria-describedby="textHelp" />
+                        </div>
+
                         <div className="form-group m-2">
                             <label htmlFor="exampleInputEmail1">Email Address</label>
                             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
@@ -21,22 +27,12 @@ function SignIn() {
                             <input type="password" className="form-control" id="exampleInputPassword1" />
                         </div>
 
-                        <div className='row m-2'>
-                            <div className='col-lg-6 col-md-6 col-sm-6 col-xs-6 text-start px-0'>
-                                <div className="form-group form-check">
-                                    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                                    <label className="form-check-label" htmlFor="exampleCheck1">Remember me</label>
-                                </div>
-                            </div>
-                            <div className='col-lg-6 col-md-6 col-sm-6 col-xs-6 text-end px-0'>
-                                <Link to="/forgetpassword" className='text-decoration-none'>Forget Password</Link>
-                            </div>
-                        </div>
-
                         <div className='text-center'>
-                            <button type="submit" className="btn btn-success m-2">Sign In</button>
-                            <p className='m-2'>Need An Account?
-                                <Link to="/signup" className='text-decoration-none'>Sign Up</Link>
+                            <Link to="/" className='text-decoration-none'>
+                                <button type="submit" className="btn btn-success m-2">Sign Up</button>
+                            </Link>
+                            <p className='m-2'>You Already Have An Account?
+                                <Link to="/" className='text-decoration-none'>Sign In</Link>
                             </p>
                         </div>
                     </div>
@@ -45,4 +41,5 @@ function SignIn() {
         </div>
     )
 }
-export default SignIn
+
+export default SignUp
