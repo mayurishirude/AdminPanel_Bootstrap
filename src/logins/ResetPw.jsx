@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function ResetPw() {
     return (
         <div className='signin'>
-            <div class="card">
+            <div className="card">
                 <div className="card-body">
                     <h5 className="card-title">Reset Password</h5>
                     <p className='form-text text-muted'>Please enter your new password:</p>
